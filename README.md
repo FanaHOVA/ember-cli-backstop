@@ -13,7 +13,8 @@ ember install:addon ember-cli-backstop
 ```
 ## Configuration
 Ember install will create a directory at ```sh root_project/tests/backstop `` containing a backstop.json file and an empty references directory.
-The backstop.json will be auto generated as shown below. For information on configuring this file see the BackstopJS [github] (https://github.com/garris/BackstopJS)
+
+The backstop.json will be auto generated as shown below. For information on configuring this file see the [BackstopJS Github] (https://github.com/garris/BackstopJS)
 
 ```js
 {
@@ -53,15 +54,17 @@ The backstop.json will be auto generated as shown below. For information on conf
     }
   ]
 }
-``
+```
 
 ## Usage
 
-Run `ember server`, navigate to the application url [/tests](http://localhost:4200/tests) (e.g. localhost:4200/tests) and select the "Enable coverage" checkbox.
+### Creating Reference Files
 
-A options file is available in tests/blanket-options.js that contains the current regex for data coverage (filter) the regex for exclusion from data coverage (antifilter) and an array of string to exclude from blanket's requirejs loader (loaderExclusions).
+Run `ember backstop reference`, and image files containing snapshots of your application will be viewable at ```sh root_project/tests/backstop/references ``.
 
-As of release 0.2.4 loader exclusions are no longer necessary to fix conflicts with addon modules.  Loader exclusions may still be used to remove data coverage for specific files (e.g. config/environment).
+### Testing
+
+Run `ember backstop reference`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare).
 
 ## License
 
