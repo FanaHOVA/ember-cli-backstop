@@ -1,7 +1,9 @@
 Ember-cli-backstop
 =========
 
-[Backstop](http://garris.github.io/BackstopJS/) based CSS regression testing for ember-cli applications
+[Backstop](http://garris.github.io/BackstopJS/) based CSS regression testing for ember-cli applications.
+
+
 
 ## Installation
 
@@ -12,7 +14,7 @@ ember install ember-cli-backstop
 ember install:addon ember-cli-backstop
 ```
 ## Configuration
-Ember install will create a directory at ```sh root_project/tests/backstop `` containing a backstop.json file and an empty references directory.
+The ember-cli-backstop generator will create a directory at `/tests/backstop ` containing a backstop.json file and an empty references directory.
 
 The backstop.json will be auto generated as shown below. For information on configuring this file see the [BackstopJS Github] (https://github.com/garris/BackstopJS)
 
@@ -60,11 +62,11 @@ The backstop.json will be auto generated as shown below. For information on conf
 
 ### Creating Reference Files
 
-Run `ember backstop reference`, and image files containing snapshots of your application will be viewable at ```sh root_project/tests/backstop/references ``.
+Run `ember backstop reference`, and image files containing snapshots of your application will be viewable at `/tests/backstop/references `.
 
-### Testing
+### Executing Backstop test
 
-Run `ember backstop reference`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare).
+Run `ember backstop test`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare).
 
 ## License
 
