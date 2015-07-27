@@ -66,7 +66,9 @@ Run `ember backstop reference`, and image files containing snapshots of your app
 
 ### Executing Backstop test
 
-Run `ember backstop test`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare).
+Run `ember backstop test`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare) to view the report.
+
+![Details](https://cloud.githubusercontent.com/assets/8845319/8913489/402c8d4c-3467-11e5-9e32-f07023e57d5d.png)
 
 ## License
 
