@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-backstop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "BackstopJS CSS regression testing for ember-cli",
   "directories": {
     "doc": "doc",
