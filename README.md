@@ -14,6 +14,9 @@ ember install ember-cli-backstop
 # if ember-cli <= 0.2.2
 ember install:addon ember-cli-backstop
 ```
+
+FYI: [CasperJS](https://github.com/n1k0/casperjs) will be installed globally with installation. 
+
 ## Configuration
 The ember-cli-backstop generator will create a directory at `/tests/backstop ` containing a backstop.json file and an empty references directory.
 
@@ -68,7 +71,6 @@ Run `ember backstop reference`, and image files containing snapshots of your app
 ### Executing Backstop test
 
 Run `ember backstop test`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare) to view the report.
-
 
 ## License
 
