@@ -68,9 +68,15 @@ The backstop.json will be auto generated as shown below. For information on conf
 
 Run `ember backstop reference`, and image files containing snapshots of your application will be viewable at `/tests/backstop/references `.
 
-### Executing Backstop test
+### Executing Backstop Test
 
 Run `ember backstop test`, navigate to the [BackstopJS Report] (http://localhost:3001/compare) (e.g. localhost:3001/compare) to view the report.
+
+### Strict Command
+
+Postfix `ember backstop test` or `ember backstop reference` with `strict` to supress CasperJS stdout. 
+
+e.g. `ember backstop test strict` 
 
 ## License
 
