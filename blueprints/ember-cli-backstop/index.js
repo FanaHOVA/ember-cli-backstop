@@ -48,18 +48,6 @@ module.exports = {
         reject(error);
       }
     });
-    var casperjsGlobalInstall = new RSVP.Promise(function (resolve, reject) {
-        exec('npm install -g casperjs', {cwd: cwd }, function (error, stdout, stderr) {
-          ui.write('\n\n');
-          if (stderr && stderr.length) {
-            ui.write(stderr);
-          }
-          if (error) {
-            return reject(error);
-          }
-          resolve();
-        });
-      });
 
     var moveBackstopJSON = new RSVP.Promise(function(resolve, reject) {
       fs.move(backstopJSONPath, projectJSONPath, function(error) {
@@ -82,17 +70,10 @@ module.exports = {
       }
     ).then(
       function() {
-        return casperjsGlobalInstall;
-      },
-      function(error) {
-        logError("moving backstop.json", error);
-      }
-    ).then(
-      function() {
         ui.write(chalk.green("\nMoved backstop.json to tests/backstop/backstop.json\n"));
       },
       function(error) {
-        logError('installing casperjs globally', error);
+        logError("moving backstop.json", error);
       }
     );
   }
