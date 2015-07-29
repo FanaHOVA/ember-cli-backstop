@@ -21,7 +21,14 @@ BackstopJS requires a global install of [CasperJS](https://github.com/n1k0/caspe
 
 ```sh
 $ npm install -g phantomjs
+// test for a correct install (most problems come from a missing global dependency)
+$ phantomjs -v
+> 1.9.8
+
 $ npm install -g casperjs
+// test for a correct install (most problems come from a missing global dependency)
+$ casperjs --version
+> 1.1.0-beta3
 ```
 
 ## Configuration
