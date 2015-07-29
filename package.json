@@ -45,13 +45,9 @@
   ],
   "dependencies": {
     "backstopjs": "^0.5.1",
-    "casperjs": "1.1.0-beta3",
     "chalk": "^1.1.0",
-    "ember-cli-babel": "^5.0.0",
     "fs-extra": "^0.22.1",
     "gulp": "3.8.10",
-    "lodash": "^3.10.0",
-    "phantomjs": "1.9.8",
     "pleasant-progress": "^1.1.0",
     "rsvp": "^3.0.6"
   },
