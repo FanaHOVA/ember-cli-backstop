@@ -52,7 +52,7 @@ Run the reference command whenever you want to update the reference snapshots fo
 
 ### Stdout overflow
 
-Logs from the target application may overflow stdout, causing the backstop commands to terminate (issue #4 has been raised against this).  As a workaround backstop commands can be run with `strict` to suppress output.
+Logs from the target application may overflow stdout, causing the backstop commands to terminate (issue #4 has been raised against this). Backstop commands can be run with `strict` to suppress output making your logs cleaner. This is not a permanent fix and does not prevent the buffer from overflowing. We are working on resoving this, but if this occurs we recommend reinstalling ember-cli-backstop. Your backstop.json changes will not be lost.
 
 e.g. `ember backstop reference strict` or `ember backstop test strict`
 
