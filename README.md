@@ -34,7 +34,7 @@ $ casperjs --version
 ## Configuration
 The ember-cli-backstop generator creates a `tests/backstop` directory containing a backstop.json configuration file and an empty reference images directory. For information on configuring the backstop.json file to collect reference images for testing refer to the [BackstopJS Github](https://github.com/garris/BackstopJS)
 
-For testing purposes you must have the URL in your backstop.json set to a route, not a HTML file, which is used in some examples. Run `ember server` in a seperate window, with the url (under scenarios) of your backstop.json is set to `http://localhost:4200/my/route/name`, before creating reference or test files.
+For testing purposes you must have the URL in your backstop.json set to a route, not a HTML file, which is used in some examples. Run `ember server` in a seperate window, with the url (under scenarios) of your backstop.json set to `http://localhost:4200/my/route/name`, before creating reference or test files.
 
 ## Usage
 
